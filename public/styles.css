@@ -1,0 +1,43 @@
+/* Navbar Styling */
+#navdiv{
+   display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #cdeded;
+        height: 30px;
+        border-top: solid;
+        border-width: 1px;
+      }
+
+#navtop{      
+         height: 80px;
+         background-image: linear-gradient(0deg, rgba(205,237,237,1) 0%, rgba(226,226,226,1) 100%);
+      }
+ /* Navbar DropDown */
+ .github .home .linkedin {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+.dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: #cdeded;
+      }
+
+.dropdown-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      }
+
+.dropdown:hover .dropdown-content {display: block;}
