@@ -7,23 +7,32 @@ export default function Navbar() {
     return (
         <div>
             <div id='navtop'></div>
-        <div id='navdiv'>
-             <div class="dropdown">
-            <Link class='home' to='/'>Home</Link>
-            <div class="dropdown-content">
-            <img src='/home.png'/>
+             <div className='navdiv'>
+             <div className="dropdown">
+            <Link className='home' to='/'>Home</Link>
+            <div className="dropdown-content">
+            <img src='/homeimage.png'/>
             </div>
             </div>
-            <div class="dropdown">
-            <a href="https://github.com/vinejars" class="github">Github</a> 
-            <div class="dropdown-content">
-            <img src='/github.png'/>
+
+            <div className="dropdown">
+            <a href="https://github.com/vinejars" className="github">Github</a> 
+            <div className="dropdown-content">
+            <img src='/githubimage.png'/>
             </div>
             </div>
-            <div class="dropdown">
-            <a href="https://linkedin.com/in/em-comeau" class="linkedin">LinkedIn</a> 
-            <div class="dropdown-content">
-            <img src='/linkedin.png'/>
+
+            <div className="dropdown">
+            <a href="https://linkedin.com/in/em-comeau" className="linkedin">LinkedIn</a> 
+            <div className="dropdown-content">
+            <img src='/linkedinimage.png'/>
+            </div>
+            </div>
+
+            <div className="dropdown">
+            <Link to="/resume" className='resume' >Resume</Link>
+            <div className="dropdown-content">
+            <img src='/resumeimage.png'/>
             </div>
             </div>
         </div>

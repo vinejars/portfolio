@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar.js'
+import Navbar from './Navbar'
+import Left from './Left'
+import Right from './Right'
 
 export default class Main extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
-               <h3> Is this working </h3> 
+              <div id='columnmaker'>
+              <Left/> 
+              <Right/>
+              </div>       
             </div>
         )
     }
