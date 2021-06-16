@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {Route, Switch } from 'react-router-dom'
 import Main from './components/Main';
-import Resume from './components/Resume'
 
 
 
@@ -13,8 +12,7 @@ export default class Routes extends Component {
     return (
       <div>
           <Switch>
-            <Route path="/" component={Main} />
-            <Route exact path="/resume" component={Resume}/>
+            <Route exact path="/" component={Main} />
           </Switch>
       
       </div>
