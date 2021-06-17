@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Resume() {
+export default function TechStack() {
     return (
         <div>
-            <img src='./Resume.png'/>
+           <h1> TECH TECH TECH </h1> 
         </div>
     )
 }

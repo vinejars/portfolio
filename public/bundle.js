@@ -196,20 +196,71 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Routes)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Main */ "./client/components/Main.js");
+/* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Projects */ "./client/components/Projects.js");
+/* harmony import */ var _components_AboutMe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/AboutMe */ "./client/components/AboutMe.js");
+/* harmony import */ var _components_TechStack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/TechStack */ "./client/components/TechStack.js");
+/* harmony import */ var _components_Social__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Social */ "./client/components/Social.js");
+/* harmony import */ var _components_Testimonials__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Testimonials */ "./client/components/Testimonials.js");
+
+
+
+
+
 
 
 
 class Routes extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Route, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
       exact: true,
       path: "/",
       component: _components_Main__WEBPACK_IMPORTED_MODULE_1__.default
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+      exact: true,
+      path: "/projects",
+      component: _components_Projects__WEBPACK_IMPORTED_MODULE_2__.default
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+      exact: true,
+      path: "/aboutme",
+      component: _components_AboutMe__WEBPACK_IMPORTED_MODULE_3__.default
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+      exact: true,
+      path: "/tech",
+      component: _components_TechStack__WEBPACK_IMPORTED_MODULE_4__.default
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+      exact: true,
+      path: "/social",
+      component: _components_Social__WEBPACK_IMPORTED_MODULE_5__.default
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+      exact: true,
+      path: "/testimonials",
+      component: _components_Testimonials__WEBPACK_IMPORTED_MODULE_6__.default
     })));
   }
 
+}
+
+/***/ }),
+
+/***/ "./client/components/AboutMe.js":
+/*!**************************************!*\
+  !*** ./client/components/AboutMe.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AboutMe)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function AboutMe() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hai"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/emprofpic.jpeg"
+  }));
 }
 
 /***/ }),
@@ -226,23 +277,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Main)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
+/* harmony import */ var _history__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../history */ "./client/history.js");
 
+
+
+
+
+const link = function (link) {
+  _history__WEBPACK_IMPORTED_MODULE_1__.default.push(`/${link}`);
+};
 
 function Main() {
   const constraintsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     ref: constraintsRef,
-    class: "flexbox"
+    className: "flexbox"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/ccc.png",
     width: 400
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    class: "container"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     drag: true,
-    lass: "dot1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    className: "dot1"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    id: "projects",
     drag: true,
     dragTransition: {
       bounceStiffness: 300,
@@ -250,11 +310,15 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onDragEnd: e => setTimeout(function () {
+      link(e.target.id);
+    }, 1500),
     src: "/orange.png"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     drag: true,
-    class: "dot2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    className: "dot2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    id: "aboutme",
     drag: true,
     dragTransition: {
       bounceStiffness: 300,
@@ -262,11 +326,15 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onDragEnd: e => setTimeout(function () {
+      link(e.target.id);
+    }, 1500),
     src: "/blue.png"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     drag: true,
-    class: "dot3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    className: "dot3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    id: "tech",
     drag: true,
     dragTransition: {
       bounceStiffness: 300,
@@ -274,11 +342,15 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onDragEnd: e => setTimeout(function () {
+      link(e.target.id);
+    }, 1500),
     src: "/yellow.png"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     drag: true,
-    class: "dot4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    className: "dot4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    id: "social",
     drag: true,
     dragTransition: {
       bounceStiffness: 300,
@@ -286,11 +358,15 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onDragEnd: e => setTimeout(function () {
+      link(e.target.id);
+    }, 1500),
     src: "/green.png"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     drag: true,
-    class: "dot5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    className: "dot5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    id: "testimonials",
     drag: true,
     dragTransition: {
       bounceStiffness: 300,
@@ -298,8 +374,87 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onDragEnd: e => setTimeout(function () {
+      link(e.target.id);
+    }, 1500),
     src: "/red.png"
   }))));
+}
+
+/***/ }),
+
+/***/ "./client/components/Projects.js":
+/*!***************************************!*\
+  !*** ./client/components/Projects.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Projects)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Projects() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "This is where I'll put my projects"));
+}
+
+/***/ }),
+
+/***/ "./client/components/Social.js":
+/*!*************************************!*\
+  !*** ./client/components/Social.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Social)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Social() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "I should think of something better for this."));
+}
+
+/***/ }),
+
+/***/ "./client/components/TechStack.js":
+/*!****************************************!*\
+  !*** ./client/components/TechStack.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TechStack)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function TechStack() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, " TECH TECH TECH "));
+}
+
+/***/ }),
+
+/***/ "./client/components/Testimonials.js":
+/*!*******************************************!*\
+  !*** ./client/components/Testimonials.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Testimonials)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+function Testimonials() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", null, "Wow, Em is the best person in the entire world I've never known anyone as amazing as them. "), " "));
 }
 
 /***/ }),
