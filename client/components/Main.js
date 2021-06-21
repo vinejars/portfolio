@@ -11,8 +11,8 @@ export default function Main() {
         return (
             <div ref={constraintsRef} >
             <div className='flexbox1'>
-                <img src='/ccc.png' width={400}/>
-                <Link to='/directory'> <img src='/paint.png' className='clickme' height={150}/>  </Link>
+                <img src='/ccc.png' alt text='Em Comeau' width={400}/>
+                <Link to='/directory'> <img src='/paint.png' alt text= 'click here for links' className='clickme' height={150}/>  </Link>
                 </div>
              
             <div className='flexbox'>
@@ -20,6 +20,7 @@ export default function Main() {
             <div drag className="dot1"> 
             <motion.img 
             id='projects'
+            alt text='projects links'
             drag  
             dragTransition={{ bounceStiffness: 600, bounceDamping: 8, power: 0.5}}   
             dragConstraints={constraintsRef}
@@ -29,6 +30,7 @@ export default function Main() {
             <div drag className="dot2">
             <motion.img 
             id='aboutme'
+            alt text='about me link'
             drag  
             dragTransition={{ bounceStiffness: 600, bounceDamping: 8, power: 0.8 }}
             dragConstraints={constraintsRef}            
@@ -37,6 +39,7 @@ export default function Main() {
             <div drag  className="dot3">
             <motion.img 
             id='tech'
+            alt text='tech link'
             drag  
             dragTransition={{ bounceStiffness: 600, bounceDamping: 8, power: 0.8 }}
             dragConstraints={constraintsRef}
@@ -45,6 +48,7 @@ export default function Main() {
             <div drag  className="dot4">
             <motion.img 
             id='social'
+            alt text='social media link'
             drag  
             dragTransition={{ bounceStiffness: 600, bounceDamping: 8, power: 0.8 }}
             dragConstraints={constraintsRef}
@@ -53,6 +57,7 @@ export default function Main() {
             <div drag  className="dot5">
             <motion.img 
             id='testimonials'
+            alt text='testimonials link'
             drag  
             dragTransition={{ bounceStiffness: 600, bounceDamping: 8, power: 0.8 }}
             dragConstraints={constraintsRef}

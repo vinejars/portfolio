@@ -72,3 +72,15 @@ body{
 .about-me { grid-area: about-me; }
 
 
+
+
+
+
+/* Media Viewport */
+
+@media only screen and (max-width: 600px) {
+  .container, .container2{
+    display: flex;
+    flex-direction: column;
+  }
+ }
