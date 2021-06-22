@@ -355,9 +355,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const link = function (link) {
-  _history__WEBPACK_IMPORTED_MODULE_1__.default.push(`/${link}`);
+  console.log('is this running?');
+
+  if (redirect) {
+    _history__WEBPACK_IMPORTED_MODULE_1__.default.push(`/${link}`);
+    redirect = false;
+  }
 };
 
+let redirect = false;
 function Main() {
   const constraintsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -366,15 +372,13 @@ function Main() {
     className: "flexbox1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/ccc.png",
-    alt: true,
-    text: "Em Comeau",
+    alt: 'Em Comeau',
     width: 400
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/directory"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/paint.png",
-    alt: true,
-    text: "click here for links",
+    alt: 'click here for links',
     className: "clickme",
     height: 150
   }), "  ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -386,8 +390,7 @@ function Main() {
     className: "dot1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.img, {
     id: "projects",
-    alt: true,
-    text: "projects links",
+    alt: 'projects links',
     drag: true,
     dragTransition: {
       bounceStiffness: 600,
@@ -395,6 +398,9 @@ function Main() {
       power: 0.5
     },
     dragConstraints: constraintsRef,
+    onClick: () => {
+      redirect = true;
+    },
     onDragEnd: e => setTimeout(function () {
       link(e.target.id);
     }, 1500),
@@ -404,8 +410,7 @@ function Main() {
     className: "dot2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.img, {
     id: "aboutme",
-    alt: true,
-    text: "about me link",
+    alt: 'about me link',
     drag: true,
     dragTransition: {
       bounceStiffness: 600,
@@ -413,6 +418,9 @@ function Main() {
       power: 0.8
     },
     dragConstraints: constraintsRef,
+    onClick: () => {
+      redirect = true;
+    },
     onDragEnd: e => setTimeout(function () {
       link(e.target.id);
     }, 1500),
@@ -422,8 +430,7 @@ function Main() {
     className: "dot3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.img, {
     id: "tech",
-    alt: true,
-    text: "tech link",
+    alt: 'tech link',
     drag: true,
     dragTransition: {
       bounceStiffness: 600,
@@ -431,6 +438,9 @@ function Main() {
       power: 0.8
     },
     dragConstraints: constraintsRef,
+    onClick: () => {
+      redirect = true;
+    },
     onDragEnd: e => setTimeout(function () {
       link(e.target.id);
     }, 1500),
@@ -440,8 +450,7 @@ function Main() {
     className: "dot4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.img, {
     id: "social",
-    alt: true,
-    text: "social media link",
+    alt: 'social media link',
     drag: true,
     dragTransition: {
       bounceStiffness: 600,
@@ -449,6 +458,9 @@ function Main() {
       power: 0.8
     },
     dragConstraints: constraintsRef,
+    onClick: () => {
+      redirect = true;
+    },
     onDragEnd: e => setTimeout(function () {
       link(e.target.id);
     }, 1500),
@@ -458,8 +470,7 @@ function Main() {
     className: "dot5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.img, {
     id: "testimonials",
-    alt: true,
-    text: "testimonials link",
+    alt: 'testimonials link',
     drag: true,
     dragTransition: {
       bounceStiffness: 600,
@@ -467,6 +478,9 @@ function Main() {
       power: 0.8
     },
     dragConstraints: constraintsRef,
+    onClick: () => {
+      redirect = true;
+    },
     onDragEnd: e => setTimeout(function () {
       link(e.target.id);
     }, 1500),
