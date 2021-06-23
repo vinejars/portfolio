@@ -5,7 +5,11 @@ import {Link} from 'react-router-dom'
 export default function Left() {
     return (
         <div>
-           <img src='/ccc.png' alt={'Em Comeau'}/>
+           <motion.img 
+            animate={{ opacity: 1 }}
+            initial={{opacity: 0}}
+            transition={{duration:1}}
+           src='/ccc.png' alt={'Em Comeau'}/>
            <motion.div
             animate={{ x: 100 }}
              transition={{ type: "spring", stiffness: 300 }}>
