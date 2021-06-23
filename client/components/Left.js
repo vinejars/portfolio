@@ -11,6 +11,7 @@ export default function Left() {
             transition={{duration:1}}
            src='/ccc.png' alt={'Em Comeau'}/>
            <motion.div
+           id='info'
             animate={{ x: 100 }}
              transition={{ type: "spring", stiffness: 300 }}>
            <h2>they/them</h2>

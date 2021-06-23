@@ -104,8 +104,9 @@ body{
 
   /* Left About Me */
 
-.info{
-  text-align: center;
+
+#info :hover{
+  font-style: italic;
 }
 
 #pics{

@@ -383,6 +383,7 @@ function Left() {
     src: "/ccc.png",
     alt: 'Em Comeau'
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
+    id: "info",
     animate: {
       x: 100
     },
