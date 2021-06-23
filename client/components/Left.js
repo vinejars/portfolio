@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 export default function Left() {
     return (
@@ -13,7 +14,7 @@ export default function Left() {
            </motion.div>
            <div id='pics'>
            <img src='/emprofpic.png' alt={'picture of em'} width={400}/>
-           <img src='/back.png' alt={'back button'} width={300}/>   
+          <Link to='/'> <img src='/back.png' alt={'back button'} width={300}/>   </Link>
            </div>
         </div>
     )
