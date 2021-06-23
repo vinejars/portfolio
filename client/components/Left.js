@@ -13,7 +13,12 @@ export default function Left() {
            <h3>Brooklyn, NY</h3> 
            </motion.div>
            <div id='pics'>
-           <img src='/emprofpic.png' alt={'picture of em'} width={400}/>
+           <motion.img 
+           whileHover={{ scale: 1.2}}
+              animate={{ opacity: 1 }}
+              initial={{opacity: 0}}
+              transition={{duration:1}}
+           src='/emprofpic.png' alt={'picture of em'} width={400}/>
           <Link to='/'> <img src='/back.png' alt={'back button'} width={300}/>   </Link>
            </div>
         </div>

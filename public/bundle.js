@@ -383,7 +383,19 @@ function Left() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "they/them"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Brooklyn, NY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "pics"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
+    animate: {
+      opacity: 1
+    },
+    initial: {
+      opacity: 0
+    },
+    transition: {
+      duration: 1
+    },
     src: "/emprofpic.png",
     alt: 'picture of em',
     width: 400
