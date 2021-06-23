@@ -17,7 +17,7 @@ export default function Main() {
         return (
             <div ref={constraintsRef} >
             <div className='flexbox1'>
-                <img src='/ccc.png' alt={'Em Comeau'} width={400}/>
+                <img src='/ccc.png' alt={'Em Comeau - a portfolio website'} width={400}/>
                 <Link to='/directory'> <img src='/paint.png' alt={'click here for links'} className='clickme' height={150}/>  </Link>
                 </div>
              

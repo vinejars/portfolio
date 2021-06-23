@@ -1,3 +1,7 @@
+*{
+font-family: 'Cormorant Garamond', serif;
+}
+
 body{
   background-image: url('/paperbg.jpeg');
   background-repeat: repeat;
@@ -47,33 +51,82 @@ body{
 .container2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
   grid-template-areas:
-    "projects . tech"
-    "social . testimonials"
-    ". about-me .";
-    justify-content: center; 
-    align-content: center; 
+    "projects aboutme tech"
+    "social testimonials home";
 }
 
-.container2 img{
-  width: 400px;
-}
 .projects { grid-area: projects; }
 
 .tech { grid-area: tech; }
 
 .social { grid-area: social; }
 
+.aboutme { grid-area: aboutme; }
+
 .testimonials { grid-area: testimonials; }
 
-.about-me { grid-area: about-me; }
+.home { grid-area: home; }
 
 
+.container2 img{
+  width: 400px;
+}
 
 
+#directoryheader{
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/* About Me Page */
+
+#columnmaker{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left right"; 
+    justify-content: space-between; 
+    align-content: stretch; 
+  }
+  .left { grid-area: left; }
+  .right { grid-area: right; }
+
+  /* Left About Me */
+
+.info{
+  text-align: center;
+}
+
+
+/* Right About Me */
+
+#rightoutside{
+  background-image: url('/aboutmerightbg.png');
+  /* background-position: center; */
+  background-size: auto;
+  height: 100vh;
+  width: 100vh;
+
+}
+h1{
+  text-align: left;
+}
+#funfacts{
+  font-size: 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #c4e600, 0 0 30px #e66800, 0 0 40px #f060f0;
+  font-weight: bold;
+}
 
 
 /* Media Viewport */

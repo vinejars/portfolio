@@ -1,10 +1,12 @@
 import React from 'react'
+import Left from './Left'
+import Right from './Right'
 
 export default function AboutMe() {
     return (
-        <div>
-            <h1>Hai</h1>
-            <img src='/emprofpic.jpeg'/>
+        <div id='columnmaker'>
+     <div className='left'> <Left/> </div>
+      <div className='right'> <Right/> </div>
         </div>
     )
 }
