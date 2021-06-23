@@ -620,7 +620,7 @@ function Right() {
     whileHover: {
       scale: 1.2
     }
-  }, "I spent used to volunteer as a clown at the Boston Children's Hospital and make balloon animals for the kids there. I still have my curly yellow wig, though these days I volunteer through Big Brothers Big Sisters and Lasagna Love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
+  }, "I used to volunteer as a clown at the Boston Children's Hospital and make balloon animals for the kids there. I still have my curly yellow wig, though these days I volunteer through Big Brothers Big Sisters and Lasagna Love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
       scale: 1.2
     }
