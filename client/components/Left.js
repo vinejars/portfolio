@@ -11,7 +11,10 @@ export default function Left() {
            <h2>they/them</h2>
            <h3>Brooklyn, NY</h3> 
            </motion.div>
-           <img src='emprofpic.png'/>
+           <div id='pics'>
+           <img src='/emprofpic.png' alt={'picture of em'} width={400}/>
+           <img src='/back.png' alt={'back button'} width={300}/>   
+           </div>
         </div>
     )
 }

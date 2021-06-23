@@ -108,6 +108,12 @@ body{
   text-align: center;
 }
 
+#pics{
+  display:flex;
+  flex-direction: column;
+}
+
+
 
 /* Right About Me */
 
