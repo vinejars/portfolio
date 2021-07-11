@@ -1,159 +1,248 @@
-*{
-font-family: 'Cormorant Garamond', serif;
-}
-
-body{
-  background-image: url('/paperbg.jpeg');
-  background-repeat: repeat;
+body {
+	background-image: url('/paperbg.jpeg');
+	background-repeat: repeat;
 }
 .container {
-  flex-grow: 1;
-  display: grid; 
-  grid-template-columns: repeat(auto-fill);
-    grid-template-rows: repeat( auto-fit); 
-  gap: 0px 0px; 
-  grid-template-areas: 
-  "dot1 . . dot3 ."
-  ". . dot2 . ."
-  "dot4 . . . dot5"
-  ". . . . ."; 
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fill);
+	grid-template-rows: repeat(auto-fit);
+	gap: 0px 0px;
+	grid-template-areas:
+		'dot1 . . dot3 .'
+		'. . dot2 . .'
+		'dot4 . . . dot5'
+		'. . . . .';
 }
 
-.container img{
-  width:  200px;
+.container img {
+	width: 200px;
 }
-.dot1 { grid-area: dot1;}
-.dot2 { grid-area: dot2; }
-.dot3 { grid-area: dot3;}
-.dot4 { grid-area: dot4;}
-.dot5 { grid-area: dot5;}
-.dot6 { grid-area: dot6;}
+.dot1 {
+	grid-area: dot1;
+}
+.dot2 {
+	grid-area: dot2;
+}
+.dot3 {
+	grid-area: dot3;
+}
+.dot4 {
+	grid-area: dot4;
+}
+.dot5 {
+	grid-area: dot5;
+}
+.dot6 {
+	grid-area: dot6;
+}
 
-.flexbox{
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 /* Navbar */
 
-#nav{
-  height: 200px;}
+#nav {
+	height: 200px;
+}
 
-.flexbox1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.nav-container {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 22px;
+	grid-template-areas: 'ccc clickme';
+	justify-items: end;
+}
+.ccc {
+	grid-area: ccc;
+}
+.clickme {
+	grid-area: clickme;
 }
 
 /* Directory */
 
 .container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-content: center;
-  align-content: center;
-  grid-template-areas:
-    "projects aboutme tech"
-    "social testimonials home";
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	justify-content: center;
+	align-content: center;
+	grid-template-areas:
+		'projects aboutme tech'
+		'social testimonials home';
 }
 
-.projects { grid-area: projects; }
-
-.tech { grid-area: tech; }
-
-.social { grid-area: social; }
-
-.aboutme { grid-area: aboutme; }
-
-.testimonials { grid-area: testimonials; }
-
-.home { grid-area: home; }
-
-
-.container2 img{
-  width: 400px;
+.projects {
+	grid-area: projects;
 }
 
-
-#directoryheader{
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.tech {
+	grid-area: tech;
 }
 
+.social {
+	grid-area: social;
+}
+
+.aboutme {
+	grid-area: aboutme;
+}
+
+.testimonials {
+	grid-area: testimonials;
+}
+
+.home {
+	grid-area: home;
+}
+
+.container2 img {
+	width: 400px;
+}
+
+#directoryheader {
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
 /* About Me Page */
 
-#columnmaker{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "left right"; 
-    justify-content: space-between; 
-    align-content: stretch; 
-  }
-  .left { grid-area: left; }
-  .right { grid-area: right; }
-
-  /* Left About Me */
-
-
-#info :hover{
-  font-style: italic;
+#columnmaker {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas: 'left right';
+	justify-content: space-between;
+	align-content: stretch;
+}
+.left {
+	grid-area: left;
+}
+.right {
+	grid-area: right;
 }
 
-#pics{
-  display:flex;
-  flex-direction: column;
+/* Left About Me */
+
+#info :hover {
+	font-style: italic;
 }
 
+#info {
+	font-family: 'Cormorant Garamond', serif;
+}
 
+#pics {
+	display: flex;
+	flex-direction: column;
+}
 
 /* Right About Me */
 
-#rightoutside{
-  background-image: url('/aboutmerightbg.png');
-  /* background-position: center; */
-  background-size: auto;
-  height: 100vh;
-  width: 100vh;
+#rightoutside {
+	background-image: url('/aboutmerightbg.png');
+	/* background-position: center; */
+	opacity: 0.7;
+	background-size: cover;
+	height: 100vh;
+	width: 50vw;
+}
+h1 {
+	text-align: left;
+	font-family: 'Nanum Pen Script', cursive;
+	text-shadow: 0px -2px 7px rgba(245, 187, 174, 1);
+	font-size: 40px;
+}
+#funfacts {
+	font-size: 25px;
+	letter-spacing: 2px;
+	color: black;
+	font-family: 'Nanum Pen Script', cursive;
+	/* text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000; */
+	font-weight: bold;
+	width: 600px;
+}
 
-}
-h1{
-  text-align: left;
-}
-#funfacts{
-  font-size: 20px;
-  text-shadow: 0 0 10px #fff, 0 0 20px #c4e600, 0 0 30px #e66800, 0 0 40px #f060f0;
-  font-weight: bold;
-  word-wrap: break-word;
+/* Projects */
+
+#projoutside {
+	background-image: url('/projectsbg.png');
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
 }
 
+.projcontain {
+	height: 100px;
+	width: 60%;
+	margin-bottom: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	align-items: space-around;
+	justify-content: flex-start;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.projcontain a {
+	margin: 5px;
+}
+
+.projcontain p {
+	font-size: 17px;
+}
+
+.projcontain img{
+	margin-left: 10px;
+}
+
+#divcontain {
+	position: fixed;
+	left: 0;
+	top: 15%;
+	width: 70%;
+}
+
+/* Testimonials */
+
+#kelsey {
+	width: 500px;
+}
 
 /* Media Viewport */
 
-@media only screen and (max-width: 600px) {
-  .container, .container2{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #columnmaker{
-    display:flex;
-    flex-direction: column;
-  }
- }
-
 @media only screen and (max-width: 800px) {
-    #columnmaker{
-    display:flex;
-    flex-direction: column;
-  }
- }
+	.container,
+	.container2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#columnmaker {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.projcontain{
+		height: 200px;
+	}
+}
+
+

@@ -292,6 +292,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
+
 
 
 function Directory() {
@@ -309,42 +311,60 @@ function Directory() {
     className: "projects"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/projects"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "/projectlink.png",
     alt: 'projects links'
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "aboutme"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/aboutme"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "/aboutmelink.png",
     alt: 'about me link'
   }), "  "), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "tech"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/tech"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "/techlink.png",
     alt: 'tech link'
   }), "  ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "social"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/social"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "/sociallink.png",
     alt: 'social media link'
   }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "testimonials"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/testimonals"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "/testimonialslink.png",
     alt: 'testimonials link'
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "home"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
+    whileHover: {
+      scale: 1.2
+    },
     src: "homelink.png",
     alt: 'home link'
   }))))));
@@ -455,19 +475,19 @@ function Main() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     ref: constraintsRef
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "flexbox1"
+    className: "nav-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/ccc.png",
     alt: 'Em Comeau - a portfolio website',
     width: 400
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/directory"
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/paint.png",
     alt: 'click here for links',
     className: "clickme",
     height: 150
-  }), "  ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }), ' ')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flexbox"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container"
@@ -588,9 +608,89 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Projects)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
 
-function Projects() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "This is where I'll put my projects"));
+
+class Projects extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      id: "projoutside"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      id: "divcontain"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
+      initial: {
+        x: -500
+      },
+      animate: {
+        x: 0
+      },
+      transition: {
+        duration: 1
+      },
+      className: "projcontain",
+      id: "tagged"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://github.com/GH-Squirtle-Squad/tagged"
+    }, "Github"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " a crossplatform AR mobile app for virtual graffiti"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: "/tagged.png",
+      width: 200
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
+      initial: {
+        x: -500
+      },
+      animate: {
+        x: 0
+      },
+      transition: {
+        duration: 1
+      },
+      className: "projcontain"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://github.com/vinejars/memester-ipsum"
+    }, "Github"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://memesteripsum.herokuapp.com"
+    }, " Live "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "a meme-themed lorem ipsum generator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: "/memester.png",
+      width: 200
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
+      initial: {
+        x: -500
+      },
+      animate: {
+        x: 0
+      },
+      transition: {
+        duration: 1
+      },
+      className: "projcontain"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://github.com/vinejars/mockulator"
+    }, "Github"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://themockulator.herokuapp.com"
+    }, " Live "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "a 3 hour coding challenge to build a fullstack app and utilize regex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: "/mockulator.png",
+      width: 200
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
+      initial: {
+        x: -500
+      },
+      animate: {
+        x: 0
+      },
+      transition: {
+        duration: 1
+      },
+      className: "projcontain"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://github.com/sweet-dream-team/grace-shopper"
+    }, "Github"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      href: "https://sweet-dream-team.herokuapp.com/"
+    }, " Live "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "a mock ecommerce site that sells dreams and nightmares"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: "/dreamporium.png",
+      width: 200
+    }))));
+  }
+
 }
 
 /***/ }),
@@ -618,7 +718,7 @@ function Right() {
       x: 100
     },
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 300
     },
     whileHover: {
@@ -628,26 +728,31 @@ function Right() {
     id: "funfacts"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
-      color: '#9e13bd'
+      scale: 1.2,
+      textShadow: "0px -2px 7px #e06ded"
     }
   }, "I have synesthesia! For me, numbers have colors and math is akin to sculpting colorful mounds of clay. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "I also have really strong emotional ties to colors due to this and choose to surround myself with as much color as possible."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
-      color: '#18878f'
+      scale: 1.2,
+      textShadow: "0px -2px 7px #67c7d6"
     }
-  }, " I have a 16 year old cat called Brigadoon who has an extremely yodely meow. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, "I have a 16 year old cat called Brigadoon who has an extremely yodely meow. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/brigs.png",
     width: 50
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
-      color: '#ad1375'
+      scale: 1.2,
+      textShadow: "0px -2px 7px #e3a87b"
     }
   }, "I love to paint and create mixed media, but don't own a single paintbrush. I most often use bubble wrap, plastic bags, and my fingers."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
-      color: '#bf5c22'
+      scale: 1.2,
+      textShadow: "0px -2px 7px #7757ab"
     }
   }, "I used to volunteer as a clown at the Boston Children's Hospital and make balloon animals for the kids there. I still have my curly yellow wig, though these days I volunteer through Big Brothers Big Sisters and Lasagna Love."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.p, {
     whileHover: {
-      color: '#71a33e'
+      scale: 1.2,
+      textShadow: "0px -2px 7px #ff87a5"
     }
   }, "I graduated from the Grace Hopper Program in May of 2021 and ended up becoming a teaching fellow there because I loved it so much! (And was actually really good at it?) If you had told me in November of 2020 that the random Udemy course I was taking would become my passion and chosen career path I would have laaaaauuughed. But I wouldn't have it any other way."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)));
 }
@@ -668,7 +773,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function Social() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "I should think of something better for this."));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "hi"));
 }
 
 /***/ }),
@@ -706,7 +811,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function Testimonials() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", null, "Wow, Em is the best person in the entire world I've never known anyone as amazing as them. "), " "));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "kelsey"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", null, "Em is an amazing developer to work with. They came to our project full of ideas and enthusiasm and shaped the vision of the app from the start. Their creativity and engineering expertise were crucial throughout the development of our app, from storyboarding to database creation to styling to AWS integration. They were always eager to jump into unknown technologies and never shied away from trying something new. Em brought so much fun to the group and their contagious personality made every day working together enjoyable. Their technical skills, originality, and inventiveness make them an exceptional developer. I would highly recommend Em for any software engineering project! "), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "- Kelsey, fellow web developer at tagged, an AR mobile app")));
 }
 
 /***/ }),

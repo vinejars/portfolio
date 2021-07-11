@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 export default function Directory() {
     return (
@@ -10,12 +11,12 @@ export default function Directory() {
         </div>
         <div className='links'>
         <div className='container2'>
-       <div className='projects'> <Link to='/projects' > <img src='/projectlink.png' alt={'projects links'}/> </Link></div>
-       <div className='aboutme'><Link to='/aboutme'> <img src='/aboutmelink.png' alt={'about me link'}/>  </Link> </div>
-       <div className='tech'><Link to='/tech'> <img src='/techlink.png' alt={'tech link'}/>  </Link></div>
-       <div className='social'><Link to='/social'> <img src='/sociallink.png' alt={'social media link'}/> </Link></div>
-       <div className='testimonials'> <Link to='/testimonals'> <img src='/testimonialslink.png' alt={'testimonials link'}/></Link></div>
-       <div className='home'><Link to='/'><img src='homelink.png' alt={'home link'}/></Link></div>
+       <div className='projects'> <Link to='/projects' > <motion.img whileHover={{ scale: 1.2}} src='/projectlink.png' alt={'projects links'}/> </Link></div>
+       <div className='aboutme'><Link to='/aboutme'> <motion.img whileHover={{ scale: 1.2}}  src='/aboutmelink.png' alt={'about me link'}/>  </Link> </div>
+       <div className='tech'><Link to='/tech'> <motion.img whileHover={{ scale: 1.2}}  src='/techlink.png' alt={'tech link'}/>  </Link></div>
+       <div className='social'><Link to='/social'> <motion.img whileHover={{ scale: 1.2}}  src='/sociallink.png' alt={'social media link'}/> </Link></div>
+       <div className='testimonials'> <Link to='/testimonals'> <motion.img whileHover={{ scale: 1.2}}  src='/testimonialslink.png' alt={'testimonials link'}/></Link></div>
+       <div className='home'><Link to='/'><motion.img whileHover={{ scale: 1.2}}  src='homelink.png' alt={'home link'}/></Link></div>
         </div>
         </div>
         </div>
