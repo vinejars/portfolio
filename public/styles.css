@@ -240,9 +240,14 @@ h1 {
 		flex-direction: column;
 	}
 
-	.projcontain{
-		height: 200px;
+	.projcontain img{
+		width: 100px;
 	}
+
+.projcontain{
+	width: 100%;
+}
 }
 
 
+ç
