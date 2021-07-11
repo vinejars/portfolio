@@ -688,7 +688,12 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     }, " Live "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "a mock ecommerce site that sells dreams and nightmares"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       src: "/dreamporium.png",
       width: 200
-    }))));
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      id: "backtomaindiv"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: "/back.png",
+      id: "backtomain"
+    })));
   }
 
 }

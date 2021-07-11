@@ -65,6 +65,9 @@ export default class Projects extends Component {
 
 					</motion.div>
 				</div>
+				<div id='backtomaindiv'>
+				<img src='/back.png' id='backtomain'/>
+				</div>
 			</div>
 		);
 	}

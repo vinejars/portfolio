@@ -152,7 +152,6 @@ body {
 
 #rightoutside {
 	background-image: url('/aboutmerightbg.png');
-	/* background-position: center; */
 	opacity: 0.7;
 	background-size: cover;
 	height: 100vh;
@@ -169,10 +168,6 @@ h1 {
 	letter-spacing: 2px;
 	color: black;
 	font-family: 'Nanum Pen Script', cursive;
-	/* text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000; */
 	font-weight: bold;
 	width: 600px;
 }
@@ -233,6 +228,22 @@ h1 {
 	left: 0;
 	top: 15%;
 	width: 70%;
+}
+
+#backtomaindiv{
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	position: fixed;
+	right: 0px;
+	bottom: 10%;
+	height: 100px;
+	width: 30%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
 }
 
 /* Testimonials */
