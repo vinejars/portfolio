@@ -800,6 +800,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 const container = {
@@ -813,6 +815,19 @@ const container = {
     }
   }
 };
+const containerList = {
+  hidden: {
+    opacity: 0,
+    x: 300
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerChildren: 0.3
+    }
+  }
+};
 const item = {
   hidden: {
     opacity: 0
@@ -821,7 +836,18 @@ const item = {
     opacity: 1
   }
 };
+const listItem = {
+  hidden: {
+    opacity: 0,
+    x: 300
+  },
+  show: {
+    opacity: 1,
+    x: 0
+  }
+};
 const images = ['javascriptico', 'htmlico', 'cssico', 'expressico', 'sequelizeico', 'sqlico', 'reactico', 'reduxico', 'nodeico', 'webpackico', 'awsico', 'githubico'];
+const tech = ['Javascript', 'HTML', 'CSS', 'Express', 'Sequelize', 'SQL/Postgres', 'React', 'Redux', 'Node', 'Webpack/Babel', 'AWS', 'Github/Git'];
 function TechStack() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "techcolumns"
@@ -839,7 +865,26 @@ function TechStack() {
     width: 150
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "techinfo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, " test ")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "/techstackheader.png"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.ul, {
+    variants: containerList,
+    initial: "hidden",
+    animate: "show"
+  }, tech.map(techItem => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.li, {
+    key: techItem,
+    variants: listItem,
+    whileHover: {
+      scale: 1.2,
+      textShadow: "-1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000",
+      color: 'white'
+    }
+  }, techItem))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "backbutton",
+    src: "/back.png"
+  }))));
 }
 
 /***/ }),

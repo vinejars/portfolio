@@ -289,6 +289,17 @@ h1 {
 	align-items: center;
 	justify-items: space-between;
 }
+
+#techinfo{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+}
+
+.backbutton{
+	position: fixed;
+	right: 0px;
+	bottom: 10%;
+}
 	  
 
 /* Media Viewport */

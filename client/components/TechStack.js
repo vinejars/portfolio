@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 const container = {
   hidden: { opacity: 0 },
@@ -11,9 +12,24 @@ const container = {
   }
 };
 
+const containerList = {
+  hidden: { opacity: 0, x:300 },
+  show: {
+    opacity: 1,
+    x:0,
+    transition: {
+      staggerChildren: 0.3
+    }
+  }
+};
+
 const item = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0},
   show: { opacity: 1 }
+}
+const listItem = {
+  hidden: { opacity: 0 , x: 300},
+  show: { opacity: 1, x:0}
 }
 
 const images = [
@@ -30,6 +46,8 @@ const images = [
     'awsico',
     'githubico'
 ]
+
+const tech = ['Javascript', 'HTML', 'CSS', 'Express', 'Sequelize', 'SQL/Postgres', 'React', 'Redux', 'Node', 'Webpack/Babel', 'AWS', 'Github/Git']
 export default function TechStack() {
     return (
         <div id='techcolumns'>
@@ -44,7 +62,20 @@ export default function TechStack() {
       ))}
 </motion.div>
 <div id='techinfo'>
-<h3> test </h3></div>
+<img src='/techstackheader.png'/>
+<motion.ul
+    variants={containerList}
+    initial="hidden"
+    animate="show">
+  {tech.map((techItem) => (
+        <motion.li key={techItem} variants={listItem} whileHover={{scale:1.2, textShadow: "-1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000", color: 'white'}}>
+            {techItem}
+        </motion.li>
+      ))}
+</motion.ul>
+<Link to='/'><img className='backbutton' src='/back.png'/></Link>
+
+</div>
 </div>
     )
 }
