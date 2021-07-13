@@ -9,7 +9,7 @@ export default class Projects extends Component {
 				<div id='divcontain'>
 					
 					
-					<img src='/tagged.png' width={200} />
+					<img src='/tagged.png' width={200} alt={'logo for tagged'}/>
 					<motion.div
 						initial={{ x: -500 }}
 						animate={{ x: 0 }}
@@ -21,7 +21,7 @@ export default class Projects extends Component {
 					</motion.div>
 					
 					
-					<img src='/memester.png' width={200} />
+					<img src='/memester.png' width={200} alt={'logo for memester-ipsum'}/>
 					<motion.div
 						initial={{ x: -500 }}
 						animate={{ x: 0 }}
@@ -34,7 +34,7 @@ export default class Projects extends Component {
 					</motion.div>
 						
 						
-					<img src='/mockulator.png' width={200} />
+					<img src='/mockulator.png' width={200} alt={'logo for mockulator'}/>
 					<motion.div
 						initial={{ x: -500 }}
 						animate={{ x: 0 }}
@@ -50,7 +50,7 @@ export default class Projects extends Component {
 					</motion.div>
 
 
-					<img src='/dreamporium.png' width={200} />
+					<img src='/dreamporium.png' width={200} alt={'logo for dreamporium'}/>
 					<motion.div
 						initial={{ x: -500 }}
 						animate={{ x: 0 }}
@@ -65,7 +65,7 @@ export default class Projects extends Component {
 					</motion.div>
 
 				</div>
-				<Link to='/'> 
+				<Link to='/main'> 
 				<div id='backtomaindiv'>
 				<img src='/back.png' id='backtomain'/>
 				</div>

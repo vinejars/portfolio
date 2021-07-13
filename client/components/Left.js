@@ -24,7 +24,7 @@ export default function Left() {
               initial={{opacity: 0}}
               transition={{duration:1}}
            src='/emprofpic.png' alt={'picture of em'} width={400}/>
-          <Link to='/'> <img src='/back.png' alt={'back button'} width={300}/>   </Link>
+          <Link to='/main'> <img src='/back.png' alt={'back button'} width={300}/>   </Link>
            </div>
         </div>
     )

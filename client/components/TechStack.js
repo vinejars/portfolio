@@ -57,7 +57,7 @@ export default function TechStack() {
     animate="show" className="techcontain">
      {images.map((image) => (
         <motion.div className={image} key={image} variants={item}>
-          <img src={`/${image}.png`} width={150}/>
+          <img src={`/${image}.png`} width={150} alt={`logo for ${image}`}/>
         </motion.div>
       ))}
 </motion.div>
@@ -73,7 +73,7 @@ export default function TechStack() {
         </motion.li>
       ))}
 </motion.ul>
-<Link to='/'><img className='backbutton' src='/back.png'/></Link>
+<Link to='/main'><img className='backbutton' src='/back.png'/></Link>
 
 </div>
 </div>

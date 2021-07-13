@@ -7,6 +7,7 @@ import TechStack from './components/TechStack'
 import Social from './components/Social'
 import Testimonials from './components/Testimonials'
 import Directory from './components/Directory'
+import Directions from './components/Directions'
 
 
 export default class Routes extends Component {
@@ -17,7 +18,8 @@ export default class Routes extends Component {
     return (
       <div>
           <Switch>
-            <Route exact path="/" component={Main} />
+            <Route exact path="/" component={Directions} />
+            <Route exact path='/main' component={Main}/>
             <Route exact path='/projects' component={Projects}/>
             <Route exact path='/aboutme' component ={AboutMe}/>
             <Route exact path='/tech' component ={TechStack}/>

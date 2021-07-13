@@ -14,6 +14,7 @@ let redirect = false;
 
 export default function Main() {
 	const constraintsRef = useRef(null);
+	
 	return (
 		<div ref={constraintsRef}>
 			<div className='nav-container'>
