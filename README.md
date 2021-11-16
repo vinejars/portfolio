@@ -4,5 +4,6 @@
 <img src='http://www.image.farm/images/2021/06/11/c19e4e7c2de77b0661faa03f7cacb8a6.png'/>
 
 <p> I built this on the NERD stack which I learned during my time both as a student and teaching fellow at the Grace Hopper Program at Fullstack Academy</p>
-</p> I decided to pay homage to my roots of my very first HTML/CSS experience and emulate a MySpace profile from the early 2000s. I hope this website can 
-both cultivate some nostalgia for my fellow millenials, as well as give you a good idea of who I am, what I can do, and how I would be an asset as a full stack engineer</p>
+</p> I decided to pay homage to my roots as an art teacher and make my portfolio as close to a piece of art as I could. I also wanted to add some fun animation, but remain accessible. To that end you can either fling the dots around to navigate through my website, or access a static directory via a link in the top right-hand corner./p>
+
+hosted [HERE](http://emcomeau.herokuapp.com/)
